@@ -1,0 +1,79 @@
+.modal-form
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  width: 610px
+  padding: 44px 3px 18px 3px
+  background-color: var(--theme-color-four)
+  border-radius: 25px
+  &_
+    &btn-close
+      position: absolute
+      top: 20px
+      right: 16px
+      z-index: 1
+    &btn-close-icon
+      width: 30px
+    &title
+      width: 93%
+      text-align: center
+      margin-bottom: 21px
+    &field
+      width: 95%
+      margin: 0 auto 20px auto
+      &--
+        &name
+          width: 45%
+          margin: 0 5px 20px 5px
+        &phone
+          width: 45%
+          margin: 0 5px 20px 5px
+        &mess
+    &rec
+      display: flex
+      align-items: center
+      width: 250px
+      height: 68px
+      margin-bottom: 19px
+      border-radius: 5px
+      border: 1px solid grey
+      background-color: var(--theme-color-second)
+    &rec-label
+      font-family: Montserrat
+      font-weight: 500
+      font-size: 12px
+      line-height: 177%
+      letter-spacing: 0.03rem
+    &rec-inp
+      appearance: none
+      position: relative
+      display: inline-block
+      width: 24px
+      height: 24px
+      margin: 0 9px 0 13px
+      background: var(--theme-color-white)
+      border: 2px solid grey
+      border-radius: 1px
+      vertical-align: middle
+      transition: .3s
+      &[type="checkbox"]
+        &::before
+          position: absolute
+          margin: auto
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
+          overflow: hidden
+      &[type="checkbox"]
+        &:checked
+          &::before
+            content: "\2713"
+            margin-top: -8px
+            margin-left: -3px
+            font-size: 30px
+    &btn
+      height: 44px
+      padding: 14px 94px
+    

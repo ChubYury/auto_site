@@ -1,0 +1,133 @@
+.buing-wrap
+  padding: 95px 10px 0px 10px
+
+.buing
+  display: flex
+  width: 99%
+  margin: 0 auto
+  background: rgb(28,46,66)
+  background: linear-gradient(123deg, rgba(28,46,66,1) 0%, rgba(28,46,66,1) 100%)
+  border-radius: 25px
+  &_
+    &content
+      padding: 50px 7px 24px 7px
+    &title
+      margin-bottom: 1px
+      color: var(--theme-color-white)
+      text-align: center
+      margin-bottom: 12px
+    &subtitle
+      color: var(--theme-color-white)
+      font-size: 14px
+      line-height: 163%
+      letter-spacing: 0.04rem
+      text-align: center
+    &text
+      width: 101%
+      margin-bottom: 27px
+      color: var(--theme-color-white)
+      font-size: 12px
+      line-height: 177%
+      text-align: center
+      letter-spacing: 0.03rem
+    &form
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-evenly
+      margin: 0 12px
+      padding: 27px 3px 18px 3px
+      background-color: var(--theme-color-four)
+      border-radius: 25px
+    &radio-box
+      display: flex
+      justify-content: space-between
+      width: 100%
+      margin-bottom: 17px
+    &radio-field
+      width: 49%
+    &radio-inp
+      appearance: none
+      position: relative
+      width: 15px
+      height: 15px
+      margin: 0 9px 0 13px
+      background: var(--theme-color-white)
+      border-radius: 100%
+      vertical-align: text-bottom
+      transition: .3s
+      &[type="radio"]
+        &::before
+          content: ""
+          position: absolute
+          margin: auto
+          left: 0
+          right: 0
+          bottom: 0
+          overflow: hidden
+          top: 0
+      &[type="radio"]
+        &:checked
+          &::before
+            border: 2px solid transparent
+            border-radius: 100%
+            background: var(--btn-color-base)
+            margin: 5px
+    &radio-label
+      color: var(--theme-color-white)
+      font-family: Montserrat
+      font-weight: 800
+      font-size: 12px
+      line-height: 177%
+      letter-spacing: 0.03rem
+    &field
+      width: 91%
+      margin: 0 auto 20px auto
+    &rec
+      display: flex
+      align-items: center
+      width: 270px
+      height: 68px
+      margin-bottom: 19px
+      border-radius: 5px
+      border: 1px solid grey
+      background-color: var(--theme-color-second)
+
+    &rec-label
+      font-family: Montserrat
+      font-weight: 500
+      font-size: 12px
+      line-height: 177%
+      letter-spacing: 0.03rem
+    &rec-inp
+      appearance: none
+      position: relative
+      display: inline-block
+      width: 24px
+      height: 24px
+      margin: 0 9px 0 13px
+      background: var(--theme-color-white)
+      border: 2px solid grey
+      border-radius: 1px
+      vertical-align: middle
+      transition: .3s
+      &[type="checkbox"]
+        &::before
+          position: absolute
+          margin: auto
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
+          overflow: hidden
+      &[type="checkbox"]
+        &:checked
+          &::before
+            content: "\2713"
+            margin-top: -8px
+            margin-left: -3px
+            font-size: 30px
+    &btn
+      height: 44px
+      padding: 14px 94px
+    &decor
+      display: none

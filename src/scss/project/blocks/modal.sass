@@ -1,0 +1,36 @@
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10000
+  &[aria-hidden='true']
+    display: none
+  &__
+    &overlay
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,0.9)
+      display: flex
+      justify-content: center
+      align-items: center
+    &container
+      
+      top: 60px
+      margin: auto
+      background-color: #fff
+      // padding: 30px
+      max-width: 610px
+      max-height: 100vh
+      border-radius: 26px
+      overflow-y: auto
+      position: relative
+      box-sizing: border-box
+      z-index: 11555
+
+.content
+  display: none

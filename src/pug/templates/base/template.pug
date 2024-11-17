@@ -10,10 +10,10 @@ html(lang='ru')
       
     block footer
     
-    //- +b.modal-wrapper#modal-wrapper
-    //-   +b.modal.modal-position.--position-2.pos-abs(aria-hidden='true')#formModal
-    //-     +e.overlay(data-micromodal-close)
-    //-     +e.container#innerModal(aria-modal='true') 
+    .modal-wrapper#modal-wrapper
+      .modal.modal-position.--position-2.pos-abs(aria-hidden='true')#formModal
+        .modal.modal__overlay(data-micromodal-close)
+        .modal.modal__container#innerModal(aria-modal='true') 
 
-    //- block modal 
-    //-   include ./element/modal
+    block modal 
+      include ../block/modal

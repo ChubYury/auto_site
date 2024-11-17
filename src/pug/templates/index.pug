@@ -1,14 +1,21 @@
 extends ./base/template
 
 block title
-  title=  "Home"
+  title=  "ADVANCES"
     
 block header 
+  - const notLinkLogo = true
   include block/header
 
 block main
   main.page 
-    include home/main-block
-        
+    include home/preview-block
+    include home/sales-block
+    include home/buying-block
+    include home/sale-steps-block
+    include home/why-us-block
+    include home/about-us-block
+    include home/map-block
+
 block footer 
   include block/footer

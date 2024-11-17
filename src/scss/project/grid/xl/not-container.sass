@@ -1,0 +1,30 @@
+.header-wrap
+  &::before
+    height: 55px
+  &::after
+    display: block
+    position: absolute
+    content: ""
+    width: 100vw
+    height: 61px
+    top: -1px
+    background-color: var(--theme-color-white)
+    transition: .5s
+
+//********************************
+
+.map
+  &_
+    &contacts
+      width: 410px
+      right: calc(50vw - 63%)
+      bottom: 100px
+      padding: 34px 40px
+    &contacts-title
+      text-align: start
+      font-size: 35px
+    &contacts-subtitle
+      text-align: start
+      margin-bottom: 10px
+    &contact
+      justify-content: flex-start

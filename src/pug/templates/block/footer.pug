@@ -1,3 +1,30 @@
-footer.footer-wrap
-    .container
-        h1 Footer
+footer.footer-wrap 
+  .container
+    .footer
+      .footer_content
+        if notLinkLogo == true
+          .logo
+            img.logo_img(src="@img/logo-2.png")
+        else
+          a.logo(href='./')
+            img.logo_img(src="@img/logo-2.png")
+        nav.footer_menu
+          ul.footer_list
+            li.footer_item
+              a.footer_link Главная
+            li.footer_item
+              a.footer_link Продажа авто
+            li.footer_item
+              a.footer_link Покупка авто
+            li.footer_item
+              a.footer_link Реализация
+            li.footer_item
+              a.footer_link Почему мы
+            li.footer_item
+              a.footer_link О нас
+            li.footer_item
+              a.footer_link Контакты
+      .footer_copywriting
+        p.footer_copywriting-text Слокас 52 (LV-1007) Рига
+        p.footer_copywriting-text Все права защищены © Bp Auto
+      

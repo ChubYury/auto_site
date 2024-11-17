@@ -1,0 +1,33 @@
+section.buing-wrap
+  .container 
+    .buing#anchor-buing
+      .buing_content
+        h2.buing_title Покупка вашего авто 
+        p.buing_subtitle Если вы хотите предложить нам свой автомобиль для выкупа, 
+                        |пожалуйста заполните форму, которая представлена ниже. 
+
+        p.buing_text * Перед выкупом, мы проверяем все автомобили на выезде или у 
+                    |нас в автосервисе.
+        form.buing_form
+          .buing_radio-box
+            .buing_radio-field
+              label.buing_radio-label(for="buing-radio-se")
+                input.buing_radio-inp#buing-radio-se(type="radio" name="buing-radio")
+                span Я продавец
+            .buing_radio-field
+              label.buing_radio-label(for="buing-radio-ad")
+                input.buing_radio-inp#buing-radio-ad(type="radio" name="buing-radio")
+                span  Я автодиллер
+          .buing_field.buing_field--name
+            input.buing_inp.inp-base(type='text' placeholder="Ваше имя")
+          .buing_field.buing_field--phone
+            input.buing_inp.inp-base(type='tel' placeholder="Ваш номер телефона")
+          .buing_field.buing_field--mess
+            textarea.buing_inp.textarea-base(type='text' placeholder="Комментарий")
+          .buing_rec
+            label.buing_rec-label(for="inp-rec")
+              input.buing_rec-inp#inp-rec(type="checkbox")
+              span  I`m not a robot
+          button.buing_btn.btn-second(type="submit") Подобрать
+      .buing_decor
+        img.buing_decor-img(src="@img/buing-decor.png")

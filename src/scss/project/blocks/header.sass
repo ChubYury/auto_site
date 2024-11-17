@@ -1,0 +1,157 @@
+.header-wrap
+  position: relative
+  &::before
+    display: block
+    position: absolute
+    content: ""
+    width: 100vw
+    height: 53px
+    bottom: -1px
+    background-color: var(--theme-color-base)
+    transition: .5s
+  &--
+    &active
+      &::before
+        background-color: var(--theme-color-white)
+.header
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  background-color: var(--theme-color-base)
+  padding: 15px 10px
+  transition: .5s
+  &--
+    &active
+      &::before
+        display: block
+        position: absolute
+        content: ""
+        width: 1000vw
+        height: 100vh
+        top: 0
+        left: -50vw
+        background-color: var(--theme-color-white)
+        transition: .5s
+        z-index: 1
+
+  &_
+    &content-wrap
+      position: absolute
+      overflow: hidden
+      width: 100%
+      height: 0vh
+      padding-top: 54px
+      top: 51px
+      right: 0vw
+      background-color: transparent
+      z-index: 10
+      transition: .3s
+      &--
+        &active
+          height: calc(100vh - 51px)
+          background-color: var(--theme-color-white)
+          overflow-y: auto
+          pointer-events: auto
+          
+    &menu
+      width: 340px
+      margin: 0 auto
+    &item
+      margin-bottom: 20px
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 14px
+      line-height: 142%
+      letter-spacing: .04rem
+      text-align: center
+    &link
+      color: var(--text-color-base)
+      text-decoration: none
+    &btn
+      display: block
+      width: 210px
+      margin: 72px auto 37px auto
+      padding: 18px
+    &contact
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-end
+      width: 340px
+      margin: 0 auto  26px auto
+    &phone
+      width: 100%
+      margin-bottom: 25px
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 16px
+      line-height: 100%
+      letter-spacing: .05rem
+      text-align: center
+    &phone-text
+      font-weight: 500
+      font-size: 12px
+    &location-link
+      color: var(--text-color-base)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 12px
+      line-height: 100%
+      letter-spacing: .04rem
+      text-decoration: none
+    &location-icon
+      height: 11px
+    &location-text
+      border-bottom: 1px dashed var(--text-color-base)
+    &social-item
+      display: inline-block
+      width: 35px
+    &social-icon
+      height: 22px
+    &langs
+      position: relative
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      width: 79px
+      cursor: pointer
+    &lang-icon
+      height: 17px
+    &lang
+      color: var(--text-color-base)
+      font-family: Montserrat
+      font-weight: 500
+      font-size: 12px
+      line-height: 140%
+      letter-spacing: .04rem
+      text-decoration: none
+      &--
+        &check
+          color: var(--theme-color-white)
+
+    &lang-arrow
+      height: 13px
+    &langs-box
+      position: absolute
+      display: flex
+      flex-direction: column
+      height: 0px
+      top: 15px
+      left: 35px
+      padding: 5px
+      border-radius: 3px
+      background-color: var(--theme-color-base)
+      overflow: hidden
+      opacity: 0
+      transition: .3s
+      &--
+        &active
+          height: 43px
+          opacity: 1
+  &--
+    &active
+      background: var(--theme-color-white)
+
+  .logo
+    position: relative
+    z-index: 100

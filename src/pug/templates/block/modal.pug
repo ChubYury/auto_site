@@ -1,0 +1,16 @@
+.content(id="modal-1")
+  form.modal-form
+    a.modal-form_btn-close
+      img.modal-form_btn-close-icon(src="./images/icons/icons.svg#btn-close" data-micromodal-close="data-micromodal-close") 
+    h2.modal-form_title Оставьте ваше сообщение
+    .modal-form_field.modal-form_field--name
+      input.buing_inp.inp-base(type='text' placeholder="Ваше имя")
+    .modal-form_field.modal-form_field--phone
+      input.buing_inp.inp-base(type='tel' placeholder="Ваш номер телефона")
+    .modal-form_field.modal-form_field--mess
+      textarea.modal-form_inp.textarea-base(type='text' placeholder="Комментарий")
+    .modal-form_rec
+      label.modal-form_rec-label(for="inp-rec")
+        input.modal-form_rec-inp#inp-rec(type="checkbox")
+        span  I`m not a robot
+    button.modal-form_btn.btn-second(type="submit") Подобрать
