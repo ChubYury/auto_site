@@ -12,7 +12,7 @@ function btnOpen(btnOpenlist) {
       e.preventDefault();
       
       const [bodySlider] = document.getElementsByClassName('js-body-slider');
-      console.log(bodySlider);
+      // console.log(bodySlider);
       
 
       bodySlider.classList.add('modal-slider--active');
