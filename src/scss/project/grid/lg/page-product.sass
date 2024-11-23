@@ -1,0 +1,74 @@
+.product
+  &_
+    &slider
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr
+      grid-template-areas: "slide-1 slide-1 slide-2" "slide-1 slide-1 slide-3" "slide-4 slide-5 slide-6"
+      column-gap: 15px
+      row-gap: 15px
+    // &data-model
+    //   width: 48%
+    // &data-price
+    //   width: 48%
+    //   padding: 33px 15%
+
+    &data-model
+      padding: 32px 0
+      background-color: transparent
+      color: var(--text-color-five)
+      text-align: left
+    &data-price
+      display: none
+    &data-item
+      background-color: var(--theme-color-white)
+
+.slide-6
+  display: block
+  
+//**********************************************************
+.product-desc
+  padding: 0 10px
+  &_
+    &title
+      display: none
+      width: 100%
+      text-align: center
+    &label
+      display: block
+      color: var(--text-color-base)
+    &price
+      display: block
+      color: var(--text-color-four)
+    &name
+      width: 50%
+      font-size: 16px
+      text-align: left
+    &text
+      width: 50%
+      font-size: 16px
+      text-align: left
+    &btn
+      margin: 40px 0
+//**********************************************************
+
+.call-us
+  padding: 71px 84px
+  justify-content: space-between
+  &_
+    &bg-img
+      display: block
+      position: absolute
+      width: 80%
+      top: 0
+      left: 0
+      z-index: 1
+    &title
+      text-align: left
+    &btn
+      margin: 25px 0 0 0
+      width: 45%
+//**********************************************************
+
+.next-cars
+  .card
+    max-width: 457px

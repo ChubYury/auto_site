@@ -8,22 +8,22 @@ section.buing-wrap
 
         p.buing_text * Перед выкупом, мы проверяем все автомобили на выезде или у 
                     |нас в автосервисе.
-        form.buing_form
-          .buing_radio-box
+        form.buing_form.js-form(action="sender.php" method="post")
+          .buing_radio-box.js-radio-group
             .buing_radio-field
               label.buing_radio-label(for="buing-radio-se")
-                input.buing_radio-inp#buing-radio-se(type="radio" name="buing-radio")
+                input.buing_radio-inp#buing-radio-se(type="radio" name="buing-radio" value="seller" required)
                 span Я продавец
             .buing_radio-field
               label.buing_radio-label(for="buing-radio-ad")
-                input.buing_radio-inp#buing-radio-ad(type="radio" name="buing-radio")
+                input.buing_radio-inp#buing-radio-ad(type="radio" name="buing-radio" value="car dealer" required)
                 span  Я автодиллер
           .buing_field.buing_field--name
-            input.buing_inp.inp-base(type='text' placeholder="Ваше имя")
+            input.buing_inp.inp-base.js(type='text' placeholder="Ваше имя" required)
           .buing_field.buing_field--phone
-            input.buing_inp.inp-base(type='tel' placeholder="Ваш номер телефона")
+            input.buing_inp.inp-base(type='tel' placeholder="Ваш номер телефона" required)
           .buing_field.buing_field--mess
-            textarea.buing_inp.textarea-base(type='text' placeholder="Комментарий")
+            textarea.buing_inp.textarea-base(type='text' placeholder="Комментарий" required)
           .buing_rec
             label.buing_rec-label(for="inp-rec")
               input.buing_rec-inp#inp-rec(type="checkbox")

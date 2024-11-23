@@ -1,17 +1,21 @@
 .btn-second
-  padding: 14px 85px
+  padding: 14px 0
   border-radius: 50px
   color: var(--theme-color-white)
   background: var(--btn-color-base)
+  font-family: Montserrat
+  font-weight: 700
+  font-size: 14px
+  text-align: center
+  text-decoration: none
   transition: .3s
 
-  
 //*** Menu button *************** 
 .btn-menu
   position: relative
   width: 28px
   height: 21px
-  background-color:	transparent
+  background-color: transparent
   z-index: 100
   &_
     &line
@@ -23,6 +27,13 @@
       border-radius: 2px
       background-color: var(--theme-color-white)
       transition: .3s
+    &click-area
+      position: absolute
+      display: block
+      width: 50px
+      height: 50px
+      top: -15px
+      left: -10px
   &::before
     display: block
     content: ""
@@ -62,5 +73,36 @@
         background-color: var(--theme-color-base)
         transform-origin: 100% 100%
         transform: rotateZ(45deg)
-    
 
+//******************************************************
+
+.btn-top
+  &_
+    &wrap
+      position: fixed
+      top: 70%
+      width: 100%
+      z-index: 200
+    &body
+      display: block
+      position: absolute
+      width: 56px
+      height: 56px
+      right: 40px
+      border-radius: 8px
+      background-color: var(--theme-color-base)
+      opacity: 0
+      transition: opacity 0.5s ease-in-out
+      &--
+        &active
+          opacity: 1
+          transition: opacity 0.5s ease-in-out
+    &icon
+      position: absolute
+      width: 24px
+      height: 24px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      transition: 0.3s ease
+      z-index: 200

@@ -1,0 +1,21 @@
+extends ./base/template
+
+block title
+  title=  "ADVANCED"
+    
+block header 
+  - const notLinkLogo = false
+  include block/header
+
+block main
+  main.page 
+    include block/breadcrumbs
+    include product/slider-block
+    include product/data-block
+    include product/description-block
+    include product/call-us-block
+    include product/next-cars-block
+
+
+block footer 
+  include block/footer

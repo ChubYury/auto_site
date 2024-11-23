@@ -1,0 +1,64 @@
+.product
+  &_
+    &slider
+      position: relative
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr 1fr
+      grid-template-areas: "slide-1 slide-1 " "slide-1 slide-1" "slide-2 slide-3" "slide-4 slide-5"
+      column-gap: 15px
+      row-gap: 15px
+      margin-bottom: 15px
+      padding: 0 10px
+    &slide
+      position: relative
+      cursor: pointer
+      &:hover
+        .product_slide-link
+          background: rgba(28,46,66,.7)
+        .product_slide-text
+          opacity: 1
+        .product_slide-img
+          filter: blur(1rem)
+    &slide-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 15px
+    &slide-link
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      border-radius: 35px
+      transition: .3s
+    &slide-text
+      display: block
+      color: var(--theme-color-white)
+      font-family: Montserrat
+      font-weight: 500
+      font-size: 14px
+      line-height: 142%
+      letter-spacing: .02rem
+      transition: .3s
+      opacity: 0
+    
+
+    
+.slide-1
+  grid-area: slide-1
+.slide-2
+  grid-area: slide-2
+.slide-3
+  grid-area: slide-3
+.slide-4
+  grid-area: slide-4
+.slide-5
+  grid-area: slide-5
+.slide-6
+  grid-area: slide-6
+  display: none

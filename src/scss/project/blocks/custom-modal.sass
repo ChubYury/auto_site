@@ -1,0 +1,105 @@
+.modal-slider
+  position: fixed
+  // padding: 25vh 0
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10000
+  opacity: 0
+  pointer-events: none
+  &--
+    &active
+      // overflow: auto
+      opacity: 1
+      pointer-events: auto
+  &_
+    &wrap
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,0.9)
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 1000
+      // pointer-events: none
+    &body
+      // width: 100%
+      // margin: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      position: relative
+      box-sizing: border-box
+      z-index: 11555
+    &btn-close
+      position: absolute
+      width: 40px
+      height: 40px
+      top: 30px
+      right: 30px
+      transform: rotateZ(45deg)
+      z-index: 11558
+      &::before
+        position: absolute
+        content: ""
+        width: 100%
+        height: 2px
+        top: calc(50% - 1px)
+        left: 0
+        background-color: var(--theme-color-white)
+      &::after
+        position: absolute
+        content: ""
+        width: 2px
+        height: 100%
+        top: 0
+        left: calc(50% - 1px)
+        background-color: var(--theme-color-white)
+
+.modal-slide
+  &_
+    &wrap
+      // width: 90%
+    &body
+      position: relative
+      vertical-align: middle
+      // width: 100%
+      // height: 100%
+      // margin: auto 0px
+      padding: 0 6px
+    &image
+      display: inline-block
+      vertical-align: middle
+      max-width: 100%
+      max-height: 100%
+      object-fit: cover
+      object-position: center
+
+.slider
+  &_
+    &btn
+      position: absolute
+      width: 100px
+      height: 400px
+      top: 50%
+      // left: 50%
+      transform: translate(0%, -50%)
+      z-index: 1000000
+      background-color: transparent
+      font-size: 5rem
+      &--
+        &prev
+          left: 0px
+        &next
+          right: 0px
+    &btn-img
+      width: 50px
+      height: 50px
+      background-color: transparent
+      &--
+        &prev
+          transform: rotateZ(-180deg)

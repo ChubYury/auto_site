@@ -2,17 +2,26 @@ section.sales-wrap
   .container
     .sales#anchor-sales
       h2.sales_title Продажа авто 
-                    
-                    |Найдено 576 авто
+        span.sales_title.sales_title--mini / Найдено 576 авто
       .sales_filters
-        p.sales_sort 
-          label.sales_sort-label Сортировать: 
-          span.sales_sort-inp по умолчанию
-        p.sales_sort  
-          label.sales_sort-label Отображать:
-          span.sales_sort-inp по 32
+        .sales_sort.js-sort-dropdown
+          p.sales_sort-label.js-sort-btn Сортировать: 
+            span.sales_sort-inp по умолчанию
+          ul.sales_sort-list.sales_sort-list--right
+            li.sales_sort-item Все 
+            li.sales_sort-item Свой авто 
+            li.sales_sort-item Реализация 
+            li.sales_sort-item Продано 
+              
+        .sales_sort.js-sort-dropdown
+          p.sales_sort-label.js-sort-btn Отображать: 
+            span.sales_sort-inp Все
+          ul.sales_sort-list.sales_sort-list--left
+            li.sales_sort-item В начале новые
+            li.sales_sort-item Дешевые наверху
+            li.sales_sort-item Дорогие наверху
       .sales_cards
-        .card.sales_card
+        a.card.sales_card(href="/product")
           img.card_img(src="@img/card-preview.png")
           h5.card_title BMW 320d (135kw)
           p.card_subtitle 2014, 223 т. км., Автомат, 2.0  TDI
@@ -35,7 +44,7 @@ section.sales-wrap
               span.card_param-name Тип продажи
               span.card_param-data Свой авто
           button.card_btn.btn-second Подробнее
-        .card.sales_card
+        a.card.sales_card(href="/product")
           img.card_img(src="@img/card-preview.png")
           h5.card_title BMW 320d (135kw)
           p.card_subtitle 2014, 223 т. км., Автомат, 2.0  TDI
@@ -58,7 +67,7 @@ section.sales-wrap
               span.card_param-name Тип продажи
               span.card_param-data Свой авто
           button.card_btn.btn-second Подробнее
-        .card.sales_card
+        a.card.sales_card(href="/product")
           img.card_img(src="@img/card-preview.png")
           h5.card_title BMW 320d (135kw)
           p.card_subtitle 2014, 223 т. км., Автомат, 2.0  TDI
@@ -81,7 +90,7 @@ section.sales-wrap
               span.card_param-name Тип продажи
               span.card_param-data Свой авто
           button.card_btn.btn-second Подробнее
-        .card.sales_card
+        a.card.sales_card(href="/product")
           img.card_img(src="@img/card-preview.png")
           h5.card_title BMW 320d (135kw)
           p.card_subtitle 2014, 223 т. км., Автомат, 2.0  TDI

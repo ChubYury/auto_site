@@ -1,0 +1,27 @@
+.breadcrumbs
+  display: flex
+  flex-wrap: wrap
+  margin: 25px 0
+  padding: 0 10px
+  &_
+    &item
+      &:last-child
+        .breadcrumbs_link
+          color: var(--theme-color-black)
+          font-weight: 700
+        
+    &link
+      color: var(--text-color-base)
+      font-family: Montserrat
+      font-weight: 500
+      font-size: 14px
+      line-height: 142%
+      letter-spacing: .02rem
+      text-decoration: none
+    &icon
+      position: relative
+      margin: 0 5px
+      width: 20px
+      height: 20px
+      transform: rotateZ(270deg)
+    

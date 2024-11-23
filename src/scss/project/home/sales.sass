@@ -1,16 +1,23 @@
 .sales
-  padding: 30px 10px 0 10px
+  padding: 150px 10px 0 10px
   &_
     &title
       width: 73%
       margin: 0 auto
       text-align: center
       margin-bottom: 20px
+      &--
+        &mini
+          font-size: 18px
+          font-weight: 700
     &filters
       display: flex
       justify-content: space-between
+      padding-right: 20px
       margin-bottom: 21px
     &sort
+      position: relative
+    &sort-label
       color: var(--text-color-base)
       font-family: Montserrat
       font-weight: 500
@@ -18,12 +25,51 @@
       line-height: 142%
       letter-spacing: .04rem
     &sort-inp
+      position: relative
       border-bottom: 1px dashed var(--text-color-base)
+      cursor: pointer
       &::after
-        content: "\01F893"
-        position: relative
-        top: 13px
+        position: absolute
+        content: "\25be"
+        right: -15px
+        top: -2px
         font-size: 22px
+        transition: .3s
+      &--
+        &active
+          &::after
+            transform: rotateZ(180deg)
+    &sort-list
+      position: absolute
+      display: none
+      height: 0
+      top: 30px
+      right: -11px
+      padding: 5px  2px
+      background-color: var(--theme-color-second)
+      border: 1px solid var(--text-color-base)
+      border-radius: 5px
+      transition: .3s
+      overflow: hidden
+      &--
+        &right
+          width: 60%
+        &left
+          width: 130%
+
+      &--
+        &active
+          display: block
+          height: auto 
+    &sort-item
+      padding: 6px 4px
+      color: var(--text-color-base)
+      font-family: Montserrat
+      font-weight: 500
+      font-size: 11px
+      line-height: 142%
+      letter-spacing: .02rem
+      cursor: pointer
     &pag
       color: var(--text-color-base)
       font-family: Montserrat

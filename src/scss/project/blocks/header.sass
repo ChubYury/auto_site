@@ -28,7 +28,7 @@
         position: absolute
         content: ""
         width: 1000vw
-        height: 100vh
+        height: 1000vh
         top: 0
         left: -50vw
         background-color: var(--theme-color-white)
@@ -37,6 +37,7 @@
 
   &_
     &content-wrap
+      display: none
       position: absolute
       overflow: hidden
       width: 100%
@@ -49,10 +50,11 @@
       transition: .3s
       &--
         &active
+          display: block
           height: calc(100vh - 51px)
           background-color: var(--theme-color-white)
           overflow-y: auto
-          pointer-events: auto
+          // pointer-events: auto
           
     &menu
       width: 340px
@@ -72,12 +74,13 @@
       display: block
       width: 210px
       margin: 72px auto 37px auto
-      padding: 18px
+      padding: 18px 18px 18px 18px
     &contact
       display: flex
       flex-wrap: wrap
       align-items: flex-end
-      width: 340px
+      justify-content: center
+      // width: 340px
       margin: 0 auto  26px auto
     &phone
       width: 100%
@@ -95,7 +98,7 @@
       color: var(--text-color-base)
       font-family: Montserrat
       font-weight: 600
-      font-size: 12px
+      font-size: 15px
       line-height: 100%
       letter-spacing: .04rem
       text-decoration: none
@@ -121,13 +124,14 @@
       color: var(--text-color-base)
       font-family: Montserrat
       font-weight: 500
-      font-size: 12px
+      font-size: 17px
       line-height: 140%
       letter-spacing: .04rem
       text-decoration: none
       &--
         &check
           color: var(--theme-color-white)
+          margin-bottom: 6px
 
     &lang-arrow
       height: 13px
@@ -136,22 +140,30 @@
       display: flex
       flex-direction: column
       height: 0px
-      top: 15px
-      left: 35px
-      padding: 5px
-      border-radius: 3px
+      top: 26px
+      left: 12px
+      padding: 12px 14px
+      border-radius: 5px
       background-color: var(--theme-color-base)
       overflow: hidden
       opacity: 0
       transition: .3s
       &--
         &active
-          height: 43px
+          height: 73px
           opacity: 1
   &--
     &active
       background: var(--theme-color-white)
 
+      .logo
+        &_
+          &img
+            &--
+              &head
+                display: block
+              &menu
+                display: none
   .logo
     position: relative
     z-index: 100

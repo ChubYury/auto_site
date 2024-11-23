@@ -2,17 +2,20 @@ iframe
   width: 100vw
   height: 509px
 
+
 .map-wrap
   position: relative
 .map
   &_
+    &body
+      border: 1px solid var(--theme-color-white)
     &contacts
       position: absolute
       width: 94vw
       margin: 0 3vw
       padding: 47px 58px
       bottom: 20px
-      background-color: rgba(255, 255, 255, .7)
+      background-color: var(--theme-color-white)
       border-radius: 25px
       box-shadow: 2px 2px 14px -13px #000000
       -webkit-box-shadow: 2px 2px 14px -13px #000000 
@@ -33,8 +36,12 @@ iframe
       position: relative
       width: 24px
       height: 24px
-      top: -3px
+      top: 2px
       left: -3px
+      &--
+        &img
+          margin-left: 15px
+          top: -2px
     &contact-name
       text-align: center
     &contact-link

@@ -1,7 +1,9 @@
 import MicroModal from 'micromodal'
 
 MicroModal.init({
-  onShow: modal => console.info(`${modal.id} is shown`), 
+  onShow: modal => {
+    tut(modal)
+  }, 
   onClose: modal => console.info(`${modal.id} is hidden`), 
   openTrigger: 'data-custom-open', 
   closeTrigger: 'data-custom-close', 

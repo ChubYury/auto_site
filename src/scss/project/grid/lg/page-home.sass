@@ -1,5 +1,6 @@
 .preview
-  padding: 108px 10px 137px 14px
+  padding: 15vh 10px 30vh 14px
+  height: 90vh
   &_
     &title
       width: 55%
@@ -12,6 +13,29 @@
     &btn
       margin: 0
       padding: 14px 62px
+
+//*********************************************************
+
+.sales
+  // padding: 100px 10px 0 10px
+  &_
+    &title
+      width: 100%
+      text-align: start
+      &--
+        &mini
+          font-size: 30px
+    &sort-item
+      padding: 2px 5px
+      cursor: pointer
+      &:hover
+        color: var(--text-color-three)
+        background-color: var(--text-color-base)
+        border-radius: 4px
+    
+  .card
+    max-width: 457px
+
 .card
   &_
     &btn
@@ -20,22 +44,21 @@
 
 //*********************************************************
 
-.sales
-  &_
-    &title
-      width: 100%
-      text-align: start
-
-  .card
-    max-width: 457px
-
-//*********************************************************
-
 .buing
   position: relative
   &_
     &content
       width: 50%
+    &title
+      margin: 0px 12px 12px 12px
+      text-align: left
+    &subtitle
+      text-align: left
+      margin: 0px 12px 10px 12px
+    &text
+      margin: 0px 12px 27px 12px
+      font-size: 14px
+      text-align: left
     &decor
       position: absolute
       display: block
@@ -53,7 +76,7 @@
 //*************************************************************
 
 .sale-step
-  padding: 93px 10px 36px 10px
+  padding: 93px 10px 80px 10px
   &_
     &title
       text-align: start
@@ -109,6 +132,7 @@
       width: 100%
       text-align: start
     &text
+      font-size: 15px
       text-align: start
       line-height: 175%
     &content
@@ -130,8 +154,19 @@
       margin-left: -3px
       text-align: start
     &date-text
+      font-size: 16px
       text-align: start
     &labels
       flex-direction: row
       justify-content: space-between
       align-items: flex-start
+      width: 60%
+    &label-icon
+      width: 80px
+      height: 80px
+      top: -5px
+      left: -16px
+    &label-text
+      // font-size: 16px
+      margin: 27px 0 13px 50px
+
